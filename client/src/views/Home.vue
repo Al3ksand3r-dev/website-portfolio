@@ -2,7 +2,7 @@
   <div>
     <app-header :bgUrl="require('@/assets/showcase-main.jpg')">
       <h1>Let's start working together!</h1>
-      <button>Download CV</button>
+      <button>Download CV <span class="lnr lnr-arrow-right"></span></button>
     </app-header>
     <app-main>
       <Technologies />

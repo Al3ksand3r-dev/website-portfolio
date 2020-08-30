@@ -14,7 +14,7 @@ export default {};
   display: grid;
   padding: 0 1rem;
   margin: 5rem auto;
-  max-width: 1024px;
+  max-width: 1440px;
   grid-template-columns: 1fr;
 
   article,
@@ -52,6 +52,10 @@ export default {};
       }
     }
   }
+
+  section {
+    margin-top: 5rem 0;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -59,8 +63,12 @@ export default {};
     padding: 0;
     .content {
       display: grid;
-      justify-items: center;
+      margin: 5rem 0;
       grid-template-columns: repeat(2, 1fr);
+
+      h1 {
+        text-align: center;
+      }
 
       h2 {
         margin: 0 0 2rem 0;

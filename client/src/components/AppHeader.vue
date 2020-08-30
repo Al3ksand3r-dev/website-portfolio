@@ -35,7 +35,7 @@ export default {
   &-content {
     margin: auto;
     padding: 0 1rem;
-    max-width: 1024px;
+    max-width: 1440px;
     position: relative;
 
     h1 {
@@ -47,10 +47,53 @@ export default {
       width: 100%;
       color: #fff;
       padding: 1rem;
+      display: flex;
+      cursor: pointer;
       background: none;
+      align-items: center;
       letter-spacing: 1px;
+      justify-content: center;
       text-transform: uppercase;
       border: 1px solid #f0a966;
+
+      span {
+        opacity: 0;
+        color: #000;
+        font-size: 1.3rem;
+        visibility: hidden;
+        transition: 0.3s ease;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    &-content {
+      margin: auto auto 15rem 5rem;
+
+      h1 {
+        width: 760px;
+        font-size: 5rem;
+      }
+
+      button {
+        width: 320px;
+        padding: 1.5rem 1rem;
+        transition: 0.3s ease;
+
+        &:hover {
+          color: #000;
+          background: #f0a966;
+
+          span {
+            opacity: 1;
+            color: #000;
+            margin-left: 2rem;
+            visibility: visible;
+          }
+        }
+      }
     }
   }
 }
