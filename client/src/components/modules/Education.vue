@@ -1,5 +1,5 @@
 <template>
-  <section class="content">
+  <article class="content">
     <h1>Education</h1>
     <div class="grid-item">
       <TextContent
@@ -18,7 +18,7 @@
         text="2004 - 2007"
       />
     </div>
-  </section>
+  </article>
 </template>
 
 <script>

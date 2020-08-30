@@ -17,7 +17,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .container {
   width: 100%;
   height: 100vh;
@@ -40,29 +40,12 @@ export default {
 
     h1 {
       color: #fff;
+      font-size: 3rem;
       margin-bottom: 1rem;
     }
 
-    button {
-      width: 100%;
+    .btn-primary {
       color: #fff;
-      padding: 1rem;
-      display: flex;
-      cursor: pointer;
-      background: none;
-      align-items: center;
-      letter-spacing: 1px;
-      justify-content: center;
-      text-transform: uppercase;
-      border: 1px solid #f0a966;
-
-      span {
-        opacity: 0;
-        color: #000;
-        font-size: 1.3rem;
-        visibility: hidden;
-        transition: 0.3s ease;
-      }
     }
   }
 }
@@ -76,23 +59,23 @@ export default {
         width: 760px;
         font-size: 5rem;
       }
+    }
+  }
 
-      button {
-        width: 320px;
-        padding: 1.5rem 1rem;
-        transition: 0.3s ease;
+  .btn-primary {
+    width: 320px;
+    padding: 1.5rem 1rem;
+    transition: 0.3s ease;
 
-        &:hover {
-          color: #000;
-          background: #f0a966;
+    &:hover {
+      color: #000;
+      background: #f0a966;
 
-          span {
-            opacity: 1;
-            color: #000;
-            margin-left: 2rem;
-            visibility: visible;
-          }
-        }
+      span {
+        opacity: 1;
+        color: #000;
+        margin-left: 2rem;
+        visibility: visible;
       }
     }
   }

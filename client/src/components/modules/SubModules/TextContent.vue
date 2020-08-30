@@ -25,14 +25,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-section {
-  margin: 5rem 0;
-}
-
-@media screen and (min-width: 1024px) {
-  section {
-    margin: 0 0 5rem 0;
-  }
-}
-</style>
+<style lang="scss" scoped></style>

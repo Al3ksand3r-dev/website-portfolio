@@ -10,14 +10,22 @@ export default {};
 
 <style lang="scss">
 .main-container {
-  gap: 5rem 0;
-  display: grid;
-  padding: 0 1rem;
-  margin: 5rem auto;
-  max-width: 1440px;
-  grid-template-columns: 1fr;
+  padding: 5rem 1rem;
+  background: #eee;
 
-  article,
+  .content {
+    width: 100%;
+    display: grid;
+    margin: 0 auto;
+    max-width: 1440px;
+    grid-template-columns: 1fr;
+
+    &:first-child {
+      margin: 3rem 0 5rem 0;
+    }
+  }
+
+  .content,
   section {
     h1,
     h2 {
@@ -29,9 +37,8 @@ export default {};
     }
 
     h2 {
-      margin: 2rem 0;
       font-size: 1.3rem;
-
+      margin: 2rem 0 1rem 0;
       &:nth-child(2) {
         font-size: 1rem;
       }
@@ -54,16 +61,15 @@ export default {};
   }
 
   section {
-    margin-top: 5rem 0;
+    margin: 5rem 0;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .main-container {
-    padding: 0;
+    padding: 5rem 2rem;
     .content {
-      display: grid;
-      margin: 5rem 0;
+      margin: 10rem auto 2rem auto;
       grid-template-columns: repeat(2, 1fr);
 
       h1 {
@@ -72,6 +78,17 @@ export default {};
 
       h2 {
         margin: 0 0 2rem 0;
+      }
+
+      &:first-child {
+        margin: 3rem auto;
+      }
+
+      .grid-item {
+        margin-top: 0.5rem;
+      }
+      section {
+        margin: 0 0 5rem 0;
       }
     }
   }
