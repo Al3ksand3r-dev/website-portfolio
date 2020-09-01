@@ -99,6 +99,24 @@ aside {
       a {
         font-size: 3rem;
         margin: 6rem 0;
+        position: relative;
+
+        &::before {
+          left: 0;
+          bottom: 0;
+          content: "";
+          width: 0;
+          height: 2px;
+          position: absolute;
+          background: #fff;
+          visibility: hidden;
+          transition: all 0.3s ease-in-out;
+        }
+
+        &:hover::before {
+          width: 100%;
+          visibility: visible;
+        }
       }
     }
   }
