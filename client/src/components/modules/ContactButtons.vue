@@ -24,6 +24,7 @@ export default {};
 
 <style lang="scss" scoped>
 .content {
+  gap: 4rem 0;
   max-width: 960px;
   button {
     margin: auto;
@@ -45,6 +46,12 @@ export default {};
     span {
       font-size: 1.3rem;
     }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .content {
+    gap: 0;
   }
 }
 </style>
