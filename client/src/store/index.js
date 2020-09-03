@@ -14,4 +14,11 @@ export default new Vuex.Store({
   },
   actions: {},
   modules: {},
+  getters: {
+    closeSideMenu(state) {
+      if (state.asideOpen) {
+        return (state.asideOpen = false);
+      }
+    },
+  },
 });

@@ -10,12 +10,20 @@ const routes = [
     name: "Home",
     component: Home,
   },
+  {
+    path: "/contact",
+    name: "contact",
+    component: () => import("@/views/Contact.vue"),
+  },
 ];
 
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
   routes,
+  scrollBehavior() {
+    return { x: 0, y: 0 };
+  },
 });
 
 export default router;

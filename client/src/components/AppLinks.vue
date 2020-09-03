@@ -1,19 +1,35 @@
 <template>
   <ul class="nav-links">
-    <li>
-      <router-link to="#">Home</router-link>
-    </li>
-    <li>
-      <router-link to="#">About</router-link>
-    </li>
-    <li>
-      <router-link to="#">Contact</router-link>
+    <li v-for="(link, idx) in links" :key="idx">
+      <router-link :to="{ name: link.name }" @click.native="closeSideMenu">{{
+        link.label
+      }}</router-link>
     </li>
   </ul>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      links: [
+        {
+          name: "Home",
+          label: "Home",
+        },
+        {
+          name: "contact",
+          label: "Contact",
+        },
+      ],
+    };
+  },
+  methods: {
+    closeSideMenu() {
+      this.$store.getters.closeSideMenu;
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped></style>

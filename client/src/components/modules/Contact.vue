@@ -8,7 +8,7 @@
       to you soon.
     </p>
 
-    <button class="btn-primary">
+    <button class="btn-primary" @click="$router.push({ name: 'contact' })">
       Contact Me <span class="lnr lnr-arrow-right"></span>
     </button>
   </article>
