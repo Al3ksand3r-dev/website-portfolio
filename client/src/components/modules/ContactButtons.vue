@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <button class="btn-contact">
+    <button>
       <h1>Any Questions?</h1>
       <span
         >If you have any questions regarding me, my services and/or like to
@@ -12,8 +12,10 @@
     </button>
     <button>
       <h1>Reach out to me directly.</h1>
-      <span>Phone: +46 76 582 50 56</span>
-      <span>Mon-Fri: 9am - 5pm</span>
+      <section>
+        <span>Phone: +46 76 582 50 56</span>
+        <span>Mon-Fri: 9am - 5pm</span>
+      </section>
     </button>
   </div>
 </template>
@@ -26,6 +28,7 @@ export default {};
 .content {
   gap: 4rem 0;
   max-width: 960px;
+  text-align: left;
   button {
     margin: auto;
     width: 400px;
@@ -33,18 +36,49 @@ export default {};
     padding: 2rem;
     display: flex;
     cursor: pointer;
+    transition: 0.3s;
     background: none;
-    align-items: center;
     flex-direction: column;
     border: 1px solid #f0a966;
-    justify-content: space-between;
+    justify-content: space-around;
 
     h1 {
       font-size: 1.8rem;
     }
 
     span {
+      text-align: left;
       font-size: 1.3rem;
+      font-weight: lighter;
+    }
+
+    span.text-orange {
+      color: #f0a966;
+    }
+
+    &:nth-of-type(1) {
+      &:hover {
+        color: #fff;
+        background: #222;
+        border-color: #222;
+      }
+    }
+
+    &:nth-of-type(2) {
+      cursor: default;
+      h1 {
+        font-size: 3rem;
+        text-align: center;
+      }
+      section {
+        width: 100%;
+        span {
+          display: block;
+          font-size: 1.5rem;
+          text-align: center;
+          margin-bottom: 1rem;
+        }
+      }
     }
   }
 }

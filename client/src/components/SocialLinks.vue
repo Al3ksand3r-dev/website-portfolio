@@ -1,10 +1,16 @@
 <template>
   <ul class="social-links">
     <li>
-      <a class="icon" href="#"><i class="fab fa-github"></i></a>
+      <a class="icon" href="https://github.com/Al3ksand3r-dev"
+        ><i class="fab fa-github"></i
+      ></a>
     </li>
     <li>
-      <a class="icon" href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a
+        class="icon"
+        href="https://www.linkedin.com/in/aleksander-dimitrijevic-864991b0/"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
     </li>
   </ul>
 </template>
