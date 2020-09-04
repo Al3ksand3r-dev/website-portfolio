@@ -28,7 +28,6 @@ aside {
   position: fixed;
   visibility: hidden;
   background: rgba(#000, 0.99);
-  transition: all 0.3s ease-in-out;
 
   .close-aside {
     top: 0;
@@ -65,6 +64,7 @@ aside {
     opacity: 1;
     overflow-x: hidden;
     visibility: visible;
+    transition: all 0.3s ease-in-out;
 
     .close-aside {
       opacity: 1;
