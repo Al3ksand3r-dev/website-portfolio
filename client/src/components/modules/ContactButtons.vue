@@ -12,10 +12,8 @@
     </button>
     <button>
       <h1>Reach out to me directly.</h1>
-      <section>
-        <span>Phone: +46 76 582 50 56</span>
-        <span>Mon-Fri: 9am - 5pm</span>
-      </section>
+      <span>Phone: +46 76 582 50 56</span>
+      <span>Mon-Fri: 9am - 5pm</span>
     </button>
   </div>
 </template>
@@ -28,27 +26,28 @@ export default {};
 .content {
   gap: 4rem 0;
   max-width: 960px;
-  text-align: left;
   button {
+    width: 100%;
     margin: auto;
-    width: 400px;
-    height: 400px;
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
+    height: 300px;
     cursor: pointer;
+    max-width: 400px;
     transition: 0.3s;
     background: none;
     flex-direction: column;
-    border: 1px solid #f0a966;
     justify-content: space-around;
+    border: 1px solid #f0a966;
 
     h1 {
       font-size: 1.8rem;
     }
 
     span {
+      font-size: 1rem;
+      line-height: 1.5;
       text-align: left;
-      font-size: 1.3rem;
       font-weight: lighter;
     }
 
@@ -66,15 +65,16 @@ export default {};
 
     &:nth-of-type(2) {
       cursor: default;
+      align-items: center;
       h1 {
-        font-size: 3rem;
-        text-align: center;
+        font-size: 1rem;
+        font-size: 1.8rem;
       }
       section {
         width: 100%;
         span {
           display: block;
-          font-size: 1.5rem;
+          font-size: 1rem;
           text-align: center;
           margin-bottom: 1rem;
         }

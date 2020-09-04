@@ -14,7 +14,7 @@
 import AppHeader from "@/components/AppHeader.vue";
 import AppMain from "@/components/AppMain.vue";
 import ContactButtons from "@/components/modules/ContactButtons.vue";
-import Map from "@/components/Map.vue";
+import Map from "@/components/modules/Map.vue";
 export default {
   components: {
     AppHeader,
