@@ -1,10 +1,6 @@
 <template>
   <nav>
-    <div
-      class="icon-burger"
-      @click="$store.commit('TOGGLE_ASIDE')"
-      :class="{ toggle: asideOpen }"
-    >
+    <div class="icon-burger" @click="$store.commit('TOGGLE_ASIDE')" :class="{ toggle: asideOpen }">
       <div />
       <div />
       <div />
@@ -45,7 +41,7 @@ nav {
   }
 
   &.toggle {
-    transform: translateX(500px);
+    transform: translateX(100%);
   }
 }
 

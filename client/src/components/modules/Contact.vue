@@ -9,7 +9,8 @@
     </p>
 
     <button class="btn-primary" @click="$router.push({ name: 'contact' })">
-      Contact Me <span class="lnr lnr-arrow-right"></span>
+      Contact Me
+      <span class="lnr lnr-arrow-right"></span>
     </button>
   </article>
 </template>
@@ -46,10 +47,6 @@ article {
   article {
     h1 {
       font-size: 5rem;
-    }
-
-    p {
-      font-size: 1.3rem;
     }
   }
 }

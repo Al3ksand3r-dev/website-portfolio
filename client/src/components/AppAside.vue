@@ -1,8 +1,6 @@
 <template>
   <aside :class="{ toggle: asideOpen }">
-    <div class="close-aside" @click="$store.commit('TOGGLE_ASIDE')">
-      &times;
-    </div>
+    <div class="close-aside" @click="$store.commit('TOGGLE_ASIDE')">&times;</div>
     <app-links />
   </aside>
 </template>
@@ -65,6 +63,7 @@ aside {
 
   &.toggle {
     opacity: 1;
+    overflow-x: hidden;
     visibility: visible;
 
     .close-aside {
